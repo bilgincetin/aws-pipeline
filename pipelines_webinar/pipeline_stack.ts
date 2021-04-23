@@ -15,9 +15,9 @@ export class PipelineStack extends Stack {
             actionName: 'GitHub',
             output: sourceArtifact,
             oauthToken: SecretValue.secretsManager('github-token'),
-            owner: 'OWNER',
-            repo: 'REPO',
-            
+            owner: 'bilgincetin',
+            repo: 'aws-pipeline',
+
         });
 
         const synthAction = pipelines.SimpleSynthAction.standardNpmSynth({
