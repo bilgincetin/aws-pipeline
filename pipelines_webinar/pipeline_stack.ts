@@ -17,6 +17,7 @@ export class PipelineStack extends Stack {
             oauthToken: SecretValue.secretsManager('github-token'),
             owner: 'OWNER',
             repo: 'REPO',
+            
         });
 
         const synthAction = pipelines.SimpleSynthAction.standardNpmSynth({
