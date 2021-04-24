@@ -14,7 +14,7 @@ export class PipelineStack extends Stack {
         const sourceAction = new cpa.GitHubSourceAction({
             actionName: 'GitHub',
             output: sourceArtifact,
-            oauthToken: SecretValue.secretsManager('github-token'),
+            oauthToken: SecretValue.secretsManager('github-token1'),
             owner: 'bilgincetin',
             repo: 'aws-pipeline',
 
